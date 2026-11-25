@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Support — Slime Maker: 3D ASMR Studio</title>
+  <style>
+    :root {
+      --bg1: #fff6f0;
+      --bg2: #f1fbf7;
+      --card: #ffffff;
+      --ink: #222336;
+      --muted: #5d6078;
+      --coral: #f2557a;
+      --coral-deep: #d93c62;
+      --jade: #19a97c;
+      --stroke: #e9e4ee;
+      --shadow: 0 12px 32px rgba(34, 35, 54, 0.08);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Rounded", "Segoe UI", Roboto, sans-serif;
+      color: var(--ink);
+      background: linear-gradient(155deg, var(--bg1) 0%, #fff 50%, var(--bg2) 100%);
+      line-height: 1.65;
+    }
+    .wrap { max-width: 820px; margin: 0 auto; padding: 28px 18px 64px; }
+    header {
+      display: flex; align-items: center; justify-content: space-between; gap: 12px;
+      flex-wrap: wrap; margin-bottom: 22px;
+    }
+    .nav { display: flex; gap: 14px; align-items: center; }
+    .nav a { color: var(--jade); font-weight: 700; text-decoration: none; }
+    .badge {
+      display: inline-block; padding: 4px 10px; border-radius: 999px;
+      background: linear-gradient(180deg, #ff7093, var(--coral));
+      color: #fff; font-weight: 800; font-size: 11px; letter-spacing: 0.08em;
+    }
+    .lang-toggle {
+      border: 1.5px solid var(--stroke); background: var(--card); color: var(--ink);
+      border-radius: 999px; padding: 8px 14px; font-weight: 700; cursor: pointer;
+    }
+    .card {
+      background: var(--card); border: 1.5px solid var(--stroke);
+      border-radius: 24px; padding: 24px; box-shadow: var(--shadow); margin-bottom: 18px;
+    }
+    h1 { margin: 8px 0 6px; font-size: clamp(24px, 4vw, 34px); line-height: 1.2; }
+    h2 { margin: 20px 0 8px; font-size: 18px; }
+    .meta { color: var(--muted); font-size: 14px; margin-bottom: 16px; }
+    .btn {
+      display: inline-block; padding: 12px 22px; border-radius: 999px;
+      text-decoration: none; font-weight: 700; color: #fff;
+      background: linear-gradient(180deg, #27c795, #14966d);
+      box-shadow: 0 4px 0 #0f7555; margin-top: 8px;
+    }
+    details {
+      border-top: 1px solid var(--stroke); padding: 14px 0;
+    }
+    details:last-of-type { border-bottom: 1px solid var(--stroke); }
+    summary { font-weight: 700; cursor: pointer; }
+    details p { margin: 8px 0 0; color: var(--muted); }
+    footer { text-align: center; color: var(--muted); font-size: 13px; margin-top: 28px; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="nav">
+        <a href="../"><span class="badge">SLIME MAKER</span></a>
+        <a href="../privacy/" data-lang-link="privacy">Privacy Policy</a>
+      </div>
+      <button class="lang-toggle" id="langBtn" onclick="toggleLang()">Tiếng Việt</button>
+    </header>
+
+    <div class="card" id="support-en">
+      <h1>App Support Center</h1>
+      <p class="meta"><strong>App:</strong> Slime Maker: 3D ASMR Studio (iOS &amp; iPadOS 17+) &middot; <strong>Response Time:</strong> 24–48 hours</p>
+
+      <p>Need help with a creation, subscription, or performance setting? Check the answers below or email us directly with your device model and iOS version.</p>
+      <a class="btn" href="mailto:tuan271111@gmail.com?subject=Slime%20Maker%20VIP%20Support">Email Support: tuan271111@gmail.com</a>
+
+      <h2>Frequently Asked Questions</h2>
+
+      <details open>
+        <summary>How do I restore my VIP Pass on a new device or after reinstalling?</summary>
+        <p>Open <strong>Slime Maker</strong> &rarr; tap the <strong>Settings (gear icon)</strong> &rarr; tap <strong>Restore purchases</strong> while signed into the same Apple ID used for purchase. All 24 slimes, 8 themes, 96 3D charms, neon brushes, and ad-free play will unlock automatically.</p>
+      </details>
+
+      <details>
+        <summary>How does the 3-day free trial and cancellation work?</summary>
+        <p>Weekly VIP includes a 3-day free trial (if eligible), followed by automatic weekly renewal unless canceled at least 24 hours before the current period ends. To cancel or switch plans anytime, open <strong>Studio Settings &rarr; Manage Subscription</strong> or go to <strong>iOS Settings &rarr; [Your Name] &rarr; Subscriptions</strong>.</p>
+      </details>
+
+      <details>
+        <summary>How do I save 3D slime snapshots and 6-second ASMR videos to Photos?</summary>
+        <p>Tap <strong>Camera (Macro Studio)</strong> while playing with your slime, tap <strong>Capture Photo</strong> or <strong>Record Video</strong>, then use the Share button and select <strong>Save Image / Save Video</strong> (allowing Photos add permission when prompted).</p>
+      </details>
+
+      <details>
+        <summary>My device feels warm during long ASMR sessions. What should I do?</summary>
+        <p>Open <strong>Studio Settings &rarr; Graphics Quality</strong>. We recommend keeping <strong>Auto (Adaptive)</strong> enabled, or selecting <strong>Balanced / Eco</strong> to lower GPU load while keeping real-time 3D soft-body physics smooth.</p>
+      </details>
+
+      <details>
+        <summary>Can I try locked slimes or charms without subscribing right away?</summary>
+        <p>Yes! Tap any VIP slime, theme, brush, or charm and choose <strong>Watch Ad &middot; Try Free</strong> on the VIP sheet (when an ad is available) to unlock it for your current studio session.</p>
+      </details>
+    </div>
+
+    <div class="card" id="support-vi" style="display:none">
+      <h1>Trung Tâm Hỗ Trợ Người Chơi</h1>
+      <p class="meta"><strong>Ứng dụng:</strong> Slime Maker: 3D ASMR Studio (iOS &amp; iPadOS 17+) &middot; <strong>Phản hồi:</strong> Trong 24–48 giờ</p>
+
+      <p>Nếu bạn cần hỗ trợ về gói VIP, khôi phục giao dịch hoặc tối ưu đồ họa trên máy, hãy xem nhanh mục giải đáp bên dưới hoặc gửi email trực tiếp cho đội ngũ phát triển.</p>
+      <a class="btn" href="mailto:tuan271111@gmail.com?subject=Ho%20tro%20Slime%20Maker%203D">Gửi Email Hỗ Trợ: tuan271111@gmail.com</a>
+
+      <h2>Câu Hỏi Thường Gặp</h2>
+
+      <details open>
+        <summary>Làm sao để khôi phục gói VIP khi đổi máy hoặc cài lại app?</summary>
+        <p>Mở <strong>Slime Maker</strong> &rarr; bấm biểu tượng <strong>Cài đặt</strong> &rarr; bấm <strong>Khôi phục giao dịch mua</strong> bằng đúng Apple ID đã thanh toán. Toàn bộ 24 slime, 8 chủ đề, 96 charm 3D, cọ neon và quyền tắt quảng cáo sẽ tự động mở lại.</p>
+      </details>
+
+      <details>
+        <summary>Dùng thử miễn phí 3 ngày &amp; cách hủy gia hạn như thế nào?</summary>
+        <p>Gói VIP Tuần kèm 3 ngày dùng thử miễn phí trước khi bắt đầu gia hạn tự động. Để hủy hoặc đổi gói, bạn mở <strong>Cài đặt Studio &rarr; Quản lý gói đăng ký</strong> hoặc vào <strong>Cài đặt iOS &rarr; [Tên Apple ID] &rarr; Đăng ký</strong> ít nhất 24 giờ trước khi hết chu kỳ.</p>
+      </details>
+
+      <details>
+        <summary>Cách lưu ảnh chụp slime 3D và video ASMR 6 giây về Thư viện Ảnh?</summary>
+        <p>Trong màn chơi Slime, chọn biểu tượng <strong>Góc Quay (Macro Studio)</strong> &rarr; chụp ảnh hoặc quay video ASMR &rarr; bấm <strong>Chia sẻ</strong> và chọn <strong>Lưu ảnh / Lưu video</strong> (cấp quyền lưu vào Thư viện Ảnh nếu iOS hỏi lần đầu).</p>
+      </details>
+
+      <details>
+        <summary>Muốn chơi lâu mà mát máy hơn thì chỉnh ở đâu?</summary>
+        <p>Vào <strong>Cài đặt Studio &rarr; Chất lượng đồ họa</strong>, giữ ở mức <strong>Tự động (Auto)</strong> hoặc chọn <strong>Cân bằng / Tiết kiệm pin</strong> để giảm tải GPU mà vẫn giữ trọn độ dẻo vật lý 3D mượt mà.</p>
+      </details>
+
+      <details>
+        <summary>Có thể thử slime hoặc charm VIP trước khi mua không?</summary>
+        <p>Có! Khi bấm vào slime, chủ đề hoặc cọ VIP bị khóa, bạn có thể chọn nút <strong>Xem QC &middot; Dùng thử miễn phí</strong> (khi có sẵn quảng cáo) để trải nghiệm ngay trong phiên chơi hiện tại.</p>
+      </details>
+    </div>
+
+    <footer>
+      <p><a href="../privacy/">Privacy Policy</a> &middot; <a href="mailto:tuan271111@gmail.com">tuan271111@gmail.com</a></p>
+      <p>&copy; 2026 Slime Maker: 3D ASMR Studio</p>
+    </footer>
+  </div>
+  <script>
+    let lang = (navigator.language || 'en').startsWith('vi') ? 'vi' : 'en';
+    function applyLang() {
+      document.documentElement.lang = lang;
+      document.getElementById('support-en').style.display = lang === 'en' ? 'block' : 'none';
+      document.getElementById('support-vi').style.display = lang === 'vi' ? 'block' : 'none';
+      document.getElementById('langBtn').textContent = lang === 'en' ? 'Tiếng Việt' : 'English';
+      document.querySelector('[data-lang-link="privacy"]').textContent = lang === 'en' ? 'Privacy Policy' : 'Chính sách Riêng tư';
+    }
+    function toggleLang() { lang = lang === 'en' ? 'vi' : 'en'; applyLang(); }
+    applyLang();
+  </script>
+</body>
+</html>
