@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Slime Maker: 3D ASMR Studio — Support & Privacy</title>
+  <style>
+    :root {
+      --bg1: #fff6f0;
+      --bg2: #f1fbf7;
+      --card: #ffffff;
+      --ink: #222336;
+      --muted: #5d6078;
+      --coral: #f2557a;
+      --coral-deep: #d93c62;
+      --jade: #19a97c;
+      --lilac: #7b61ff;
+      --stroke: #e9e4ee;
+      --shadow: 0 12px 32px rgba(34, 35, 54, 0.08);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Rounded", "Segoe UI", Roboto, sans-serif;
+      color: var(--ink);
+      background: linear-gradient(155deg, var(--bg1) 0%, #fff 50%, var(--bg2) 100%);
+      min-height: 100vh;
+      line-height: 1.65;
+    }
+    .wrap { max-width: 820px; margin: 0 auto; padding: 28px 18px 64px; }
+    header {
+      display: flex; align-items: center; justify-content: space-between; gap: 12px;
+      flex-wrap: wrap; margin-bottom: 24px;
+    }
+    .brand { display: flex; align-items: center; gap: 12px; text-decoration: none; color: inherit; }
+    .badge {
+      display: inline-block; padding: 4px 10px; border-radius: 999px;
+      background: linear-gradient(180deg, #ff7093, var(--coral));
+      color: #fff; font-weight: 800; font-size: 11px; letter-spacing: 0.08em;
+    }
+    h1 { margin: 8px 0 6px; font-size: clamp(26px, 4.5vw, 36px); line-height: 1.2; }
+    h2 { margin: 0 0 10px; font-size: 20px; }
+    .subtitle { color: var(--muted); margin: 0 0 20px; }
+    .card {
+      background: var(--card); border: 1.5px solid var(--stroke);
+      border-radius: 24px; padding: 24px; box-shadow: var(--shadow); margin-bottom: 18px;
+    }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }
+    .btn {
+      display: inline-block; padding: 12px 20px; border-radius: 999px;
+      text-decoration: none; font-weight: 700; color: #fff;
+      background: linear-gradient(180deg, #ff7093, var(--coral-deep));
+      box-shadow: 0 4px 0 #b8294d;
+    }
+    .btn-jade { background: linear-gradient(180deg, #27c795, var(--jade)); box-shadow: 0 4px 0 #138562; }
+    .lang-toggle {
+      border: 1.5px solid var(--stroke); background: var(--card); color: var(--ink);
+      border-radius: 999px; padding: 8px 14px; font-weight: 700; cursor: pointer;
+    }
+    .hidden { display: none; }
+    footer { text-align: center; color: var(--muted); font-size: 13px; margin-top: 32px; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <a class="brand" href="./">
+        <span class="badge">3D ASMR STUDIO</span>
+        <strong>Slime Maker</strong>
+      </a>
+      <button class="lang-toggle" id="langBtn" onclick="toggleLang()">Tiếng Việt</button>
+    </header>
+
+    <div class="card">
+      <h1 data-en="Slime Maker: 3D ASMR Studio" data-vi="Slime Maker: 3D ASMR Studio">Slime Maker: 3D ASMR Studio</h1>
+      <p class="subtitle" data-en="Official Privacy Policy & App Support Center for iPhone and iPad." data-vi="Trung tâm Chính sách Quyền riêng tư & Hỗ trợ chính thức cho iPhone và iPad.">Official Privacy Policy &amp; App Support Center for iPhone and iPad.</p>
+
+      <div class="grid">
+        <div class="card" style="margin-bottom:0">
+          <h2 data-en="App Support & FAQ" data-vi="Hỗ trợ & Giải đáp">App Support &amp; FAQ</h2>
+          <p data-en="Get help with VIP subscriptions, restoring purchases, 3D graphics settings, and photo/ASMR video exports." data-vi="Hướng dẫn khôi phục gói VIP, hủy gia hạn Apple, xuất ảnh/video ASMR và tối ưu chất lượng đồ họa.">Get help with VIP subscriptions, restoring purchases, 3D graphics settings, and photo/ASMR video exports.</p>
+          <a class="btn btn-jade" href="./support/" data-en="Open Support Center" data-vi="Mở Trung tâm Hỗ trợ">Open Support Center</a>
+        </div>
+
+        <div class="card" style="margin-bottom:0">
+          <h2 data-en="Privacy Policy" data-vi="Chính sách Quyền riêng tư">Privacy Policy</h2>
+          <p data-en="Learn how your 3D slimes stay private on your device and how permissions, purchases, and ads are handled." data-vi="Tìm hiểu cách dữ liệu slime 3D được lưu cục bộ trên máy cùng các quyền hệ thống, mua hàng và quảng cáo.">Learn how your 3D slimes stay private on your device and how permissions, purchases, and ads are handled.</p>
+          <a class="btn" href="./privacy/" data-en="Read Privacy Policy" data-vi="Đọc Chính sách">Read Privacy Policy</a>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>Bundle ID: <code>dev.personal.slimemaker</code> &middot; Contact: <a href="mailto:tuan271111@gmail.com">tuan271111@gmail.com</a></p>
+      <p>&copy; 2026 Slime Maker: 3D ASMR Studio (Tuan Nguyen)</p>
+    </footer>
+  </div>
+  <script>
+    let lang = (navigator.language || 'en').startsWith('vi') ? 'vi' : 'en';
+    function applyLang() {
+      document.documentElement.lang = lang;
+      document.getElementById('langBtn').textContent = lang === 'en' ? 'Tiếng Việt' : 'English';
+      document.querySelectorAll('[data-en]').forEach(el => {
+        el.textContent = el.getAttribute('data-' + lang);
+      });
+    }
+    function toggleLang() { lang = lang === 'en' ? 'vi' : 'en'; applyLang(); }
+    applyLang();
+  </script>
+</body>
+</html>
